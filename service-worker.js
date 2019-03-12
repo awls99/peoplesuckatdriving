@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/peoplesuckatdriving/precache-manifest.16b6aa7b0cb9644ee3fd73d1936385e7.js"
+  "/peoplesuckatdriving/precache-manifest.4630f81ad3de4607b1dab0924fd0c924.js"
 );
 
 workbox.clientsClaim();

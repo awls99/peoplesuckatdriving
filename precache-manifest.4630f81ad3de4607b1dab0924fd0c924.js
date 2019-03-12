@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "81e8c340b36c21e75ec9",
+    "revision": "8a810a4f721cabba9e06",
     "url": "/peoplesuckatdriving/static/css/main.45b05db2.chunk.css"
   },
   {
-    "revision": "81e8c340b36c21e75ec9",
-    "url": "/peoplesuckatdriving/static/js/main.9288e9b8.chunk.js"
+    "revision": "8a810a4f721cabba9e06",
+    "url": "/peoplesuckatdriving/static/js/main.b7b9c4b1.chunk.js"
   },
   {
     "revision": "27348bfa336e47ab1934",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/peoplesuckatdriving/static/js/2.59634610.chunk.js"
   },
   {
-    "revision": "87d1892c631d1645cab09189cce0495c",
+    "revision": "5a16b57a5075e7178c6d1230cc0b0b81",
     "url": "/peoplesuckatdriving/index.html"
   }
 ];
