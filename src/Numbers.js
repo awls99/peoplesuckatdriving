@@ -1,8 +1,12 @@
 import React, { useState,useEffect } from 'react';
+import Smug from './SmugText';
+
 
 function Numbers()  {
   const [deaths, setDeaths] = useState(0);
   const [injured, setInjured] = useState(0);
+  const [smugText, setSmugText] = useState(Smug());
+
 
   useEffect(() => {
       const interval = setInterval(() => {
@@ -13,6 +17,16 @@ function Numbers()  {
         let newInjured = Math.round(injuredOrDisabledPerSecond * elapsed )
         setInjured(newInjured);
       }, 1000);
+
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+
+  useEffect(() => {
+      const interval = setInterval(() => {
+        setSmugText(Smug())
+      }, 10000);
 
       return () => {
         clearInterval(interval);
@@ -30,7 +44,7 @@ function Numbers()  {
       <h1>Since you've opened this page {deaths} people have died!</h1>
       <h2>Also, {injured} people have been injured or straight up became disabled...</h2>
       <h3>Car accidents are the number 1 cause of death among children and young adults.</h3>
-      <p>But yeah... let's keep arguing about who will pay for insurance on self driving cars...</p>
+      {smugText}
       <cite>WHO <a href="https://www.who.int/violence_injury_prevention/road_safety_status/2018/infographicEN.pdf?ua=1">Infographic for 2018</a></cite>
       <br></br><cite>ASIRT <a href="https://www.asirt.org/safe-travel/road-safety-facts/">Data for 2018</a></cite>
 
